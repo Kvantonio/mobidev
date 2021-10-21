@@ -1,9 +1,9 @@
-# mobidev
+# Mobidev
 
-
+## Task1
 There are two files in the repository:
-*script.sh
-*task1.rb
+* script.sh
+* task1.rb
 
 To run the ```script.sh```:
 
