@@ -8,7 +8,7 @@ There are two files in the repository:
 To run the ```script.sh```:
 
 ```
-zsh script.sh
+zsh script.sh sometext
 ```
 To run the ```task1.rb```:
 
