@@ -1,3 +1,4 @@
-COURSE_VAR='HELLO_COURSE'
+read HELLO_COURSE
 
-echo $COURSE_VAR
+echo Your text is $HELLO_COURSE
+
