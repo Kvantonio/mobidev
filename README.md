@@ -1,7 +1,17 @@
 # mobidev
+
+
+There are two files in the repository:
+*script.sh
+*task1.rb
+
+To run the ```script.sh```:
+
 ```
-git add .
-git status
-git commit -m "task 1 final"
-git push
+zsh script.sh
+```
+To run the ```task1.rb```:
+
+```
+ruby ./task1.rb
 ```
