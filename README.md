@@ -1,6 +1,5 @@
 # Mobidev minitasks
 
----
 ## Task1
 There are two files in the folder `task1`:
 * script.sh
