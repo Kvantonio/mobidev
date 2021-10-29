@@ -21,7 +21,7 @@ ruby ./task1.rb
 ## Task2
 In this task, we created a class for working with data about store products.
 
-The folder `task1` contains:
+The folder `task2` contains:
 * task2.rb
 
 To run the `task2` use:
@@ -44,4 +44,36 @@ _Will be output:_
 {:l033=>3, :l05=>7, :l1=>8, :l2=>4}
 ----------------------
 36
+```
+
+## Task3
+In this task, we created our firs DSL on ruby for creating html.
+
+The folder `task3` contains:
+* task3.rb
+
+To run the `task3` use:
+```zsh
+ruby ./task3/task3.rb
+```
+
+_Will be output:_
+```html
+<!doctype html>
+
+<html>
+    <head>
+        <meta name="charset" content="utf-8">
+        <title>The HTML5 Template</title>
+
+        <meta name="description" content="The HTML5 Template">
+        <meta name="author" content="MobiDev">
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+   <head>
+    <body>
+        <div>Hello World</div>
+        <script src="js/scripts.js"> </ script>
+   </body>
+</html>
+
 ```
