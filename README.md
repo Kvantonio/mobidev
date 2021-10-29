@@ -31,7 +31,7 @@ ruby ./task2/task2.rb
 
 _Will be output:_
 ```ruby
-["Cola", "Water", "Juice"]
+["Cola", "Juice", "Water"]
 
 ----------------------
 [

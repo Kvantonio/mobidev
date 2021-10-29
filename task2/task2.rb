@@ -6,7 +6,7 @@ class Drink
   def item_in_stock
     temp = []
     @arr.each { |item| temp << item[:name] if item[:quantity_by_size].length > 0 }
-    temp
+    temp.sort
   end
 
   def afforbadle
@@ -25,7 +25,7 @@ class Drink
     @arr.each { |item| return item[:quantity_by_size] if item[:name] == name }
   end
 
-  def total_stock(name)
+  def total_stock
     sum = 0
     @arr.each { |item| item[:quantity_by_size].each { |k, v| sum += v } }
     sum
@@ -53,5 +53,5 @@ puts "----------------------"
 print d.how_much_left("Cola")
 puts
 puts "----------------------"
-print d.total_stock("Cola")
+print d.total_stock
 
