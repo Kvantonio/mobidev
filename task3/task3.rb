@@ -4,14 +4,6 @@ class MDHtml
     instance_eval &block
   end
 
-  def method_missing(name, *args)
-    tag = name.to_s
-    content = args.first
-    @res ||= ''
-    @res += "<#{tag}>#{content}</#{tag}>"
-  end
-
-
   def html(&block)
     @res << "<!doctype html>\n\n"
     @res << "<html>\n"
@@ -43,22 +35,14 @@ class MDHtml
     instance_eval &block
     @res << "\t</body>\n"
   end
-  def div(*args,&block)
+  def div(&block)
     @res << "\t\t<div>"
-    if block_given?
-      instance_eval &block
-    else
-      @res << args.first
-    end
+    @res << block.call
     @res << "</div>\n"
   end
 
   def script **data
     @res << %Q{\t\t<script #{data.keys.join}="#{data.values.join}"> </ script>\n}
-  end
-
-  def p str
-    @res << str
   end
 
   def to_s
@@ -80,7 +64,7 @@ MDHtml.new do
 
     body do
       div do
-        p "Hello World"
+         "Hello World"
       end
       script src:"js/scripts.js"
     end
