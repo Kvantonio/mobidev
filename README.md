@@ -77,3 +77,36 @@ _Will be output:_
 </html>
 
 ```
+
+## Task4
+In this task, we created our DSL generator html and md files on ruby.
+Use Structures, Rake, Gemfile
+
+The project structure:
+```
+task4/
+  ├── Gemfile
+  ├── Rakefile
+  ├── app.rb
+  ├── data_structures.rb
+  ├── env.rb
+  ├── generator.rb
+  ├── generator_dsl.rb
+  └── generators/
+        ├── base.rb
+        ├── html.rb
+        └── md.rb
+```
+
+To run the `task4` use:
+```zsh
+ruby ./task4/app.rb
+```
+
+
+```shell
+rake cleanup[./path/]
+ #or 
+rake cleanup # clean default folder "/build"
+
+```
